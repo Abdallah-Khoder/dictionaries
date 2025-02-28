@@ -42,3 +42,11 @@ if(branch  in company_employees) :
 else : 
     print(f"Branch '{branch}' does not exist!")
 print(company_employees)
+
+def count_employee(dic): 
+    count_employe = 0 
+    for i in dic.values():
+        count_employe+= len(i)
+    return count_employe
+
+print(count_employee(company_employees))
